@@ -5,7 +5,7 @@ import 'repository.dart';
 
 class NewsAPI implements Source{
 
-  final _root='https://newsapi.org/v2/everything?apiKey=9d206d9be4174155bf59edb914ce4101&pageSize=10&q="Nigeria"';
+  final _root='https://newsapi.org/v2/everything?apiKey=9d206d9be4174155bf59edb914ce4101&pageSize=100&q="Nigeria"';
   final _url="https://newsapi.org/v2/top-headlines?apiKey=9d206d9be4174155bf59edb914ce4101&country=";
   String _sourceUrl="https://newsapi.org/v2/sources?apiKey=9d206d9be4174155bf59edb914ce4101&language=en";
 

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../screens/news_detail.dart';
 import 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
 import '../models/news_model.dart';
 
@@ -22,14 +21,6 @@ class NewsListTile extends StatelessWidget{
             ),
           ),
           onTap: (){
-            // Navigator.pushReplacement(context, MaterialPageRoute(
-            //   builder: (context)=>NewsDetail(newsModel: newsModel)
-            // ));
-            // Navigator.push(context, 
-            //   MaterialPageRoute(
-            //     builder: (context)=>NewsDetail(url:newsModel.url)
-            //   )
-            // );
             Navigator.push(context, 
               MaterialPageRoute(
                 builder: (context)=>new WebviewScaffold(

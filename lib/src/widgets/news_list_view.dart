@@ -12,13 +12,10 @@ class NewsListView extends StatelessWidget{
       stream: stream,
       builder: (context,snapshot){
         if(!snapshot.hasData){
-          print("No Data");
           return Center(
             child: CircularProgressIndicator(),
           );
         }
-        print("There is now data");
-
         final List<dynamic> articles=snapshot.data;
         return Refresh(articles: articles);
       },

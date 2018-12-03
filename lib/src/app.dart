@@ -16,22 +16,19 @@ class App extends StatelessWidget{
   //   );
   // }
   Widget build(BuildContext context){
-    return NewsBlocProvider(
-      child: MaterialApp(
-        title: "My News App",
-        onGenerateRoute: routes
-      ),
+    return MaterialApp(
+      title: "My News App",
+      onGenerateRoute: routes
     );
   }
 
   Route routes(RouteSettings settings){
-
       if(settings.name=="/"){
         return MaterialPageRoute(
           builder: (context){
             final bloc=NewsBlocProvider.of(context);
-            bloc.fetchAllNews();
-            bloc.fetchTopNews();
+            // bloc.fetchAllNews();
+            // bloc.fetchTopNews();
             return HomePage();
           }
         );

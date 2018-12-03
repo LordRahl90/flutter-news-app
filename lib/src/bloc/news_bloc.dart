@@ -12,7 +12,8 @@ class NewsBloc{
 
   NewsBloc(){
     //we fetch and transform each dynamic record to a news Model.
-    // fetchTopNews();
+    fetchTopNews();
+    fetchAllNews();
   }
   
   get allNews => _allNewsFetcher.stream;
